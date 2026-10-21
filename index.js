@@ -11,6 +11,14 @@ app.use(
     })
 )
 
+const pool = new Pool({
+    user: 'postgres',
+    host: 'localhost',
+    database: 'mahasiswa',
+    password: '210706',
+    port: 5432,
+})
+
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)
 })
